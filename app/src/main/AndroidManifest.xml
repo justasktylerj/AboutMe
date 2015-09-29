@@ -16,6 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".FoodActivity"
+            android:label="@string/title_activity_food" >
+        </activity>
+        <activity
+            android:name=".SchoolActivity"
+            android:label="@string/title_activity_school" >
+        </activity>
+        <activity
+            android:name=".GamesActivity"
+            android:label="@string/title_activity_games" >
+        </activity>
+        <activity
+            android:name=".TvActivity"
+            android:label="@string/title_activity_tv" >
+        </activity>
+        <activity
+            android:name=".ProgrammingActivity"
+            android:label="@string/title_activity_programming" >
+        </activity>
     </application>
 
 </manifest>
