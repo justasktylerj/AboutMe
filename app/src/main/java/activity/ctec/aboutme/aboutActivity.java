@@ -15,6 +15,7 @@ public class aboutActivity extends AppCompatActivity
     private Button school;
     private Button tV;
     private Button games;
+    private Button program;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,6 +27,7 @@ public class aboutActivity extends AppCompatActivity
         school = (Button) findViewById(R.id.school);
         tV = (Button) findViewById(R.id.tV);
         games = (Button) findViewById(R.id.games);
+        program = (Button) findViewById(R.id.program);
         setupListeners();
     }
 
@@ -87,6 +89,14 @@ public class aboutActivity extends AppCompatActivity
             public void onClick(View buttonView)
             {
                 Intent myIntent = new Intent(buttonView.getContext(), SchoolActivity.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+        program.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View buttonView)
+            {
+                Intent myIntent = new Intent(buttonView.getContext(), ProgrammingActivity.class);
                 startActivityForResult(myIntent, 0);
             }
         });
