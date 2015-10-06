@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="My favorite games include the kingdom rush serires, however my favorite game of all time is D&amp;D"
+        android:text="My favorite games include the kingdom rush serires, however my favorite game of all time is Dungeons and Dragons, my current charater is shown below"
         android:id="@+id/gamesDnd"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -26,14 +26,12 @@
         android:layout_alignParentStart="true" />
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
         android:id="@+id/kingdonRush"
+        android:background="@drawable/gnometim"
         android:layout_below="@+id/gamesDnd"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="36dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="82dp" />
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
