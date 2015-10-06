@@ -36,6 +36,10 @@
             android:name=".ProgrammingActivity"
             android:label="@string/title_activity_programming" >
         </activity>
+        <activity
+            android:name=".secret_activity"
+            android:label="@string/title_activity_secret_activity" >
+        </activity>
     </application>
 
 </manifest>

@@ -7,21 +7,21 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.view.View;
 import android.content.Intent;
-import android.widget.ImageButton;
 
-public class SchoolActivity extends AppCompatActivity
+
+
+public class secret_activity extends AppCompatActivity
 {
-    private Button homeSchool;
-    private ImageButton schoolSecret;
+
+    private Button homeSecret;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_school);
+        setContentView(R.layout.activity_secret_activity);
 
-        homeSchool = (Button) findViewById(R.id.homeSchool);
-        schoolSecret = (ImageButton) findViewById(R.id.schoolSecret);
+        homeSecret = (Button) findViewById(R.id.homeSecret);
 
         setupListeners();
     }
@@ -30,7 +30,7 @@ public class SchoolActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu)
     {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_school, menu);
+        getMenuInflater().inflate(R.menu.menu_secret_activity, menu);
         return true;
     }
 
@@ -43,8 +43,7 @@ public class SchoolActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings)
-        {
+        if (id == R.id.action_settings) {
             return true;
         }
 
@@ -53,7 +52,7 @@ public class SchoolActivity extends AppCompatActivity
 
     private void setupListeners()
     {
-        homeSchool.setOnClickListener(new View.OnClickListener()
+        homeSecret.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View buttonView)
             {
@@ -61,13 +60,6 @@ public class SchoolActivity extends AppCompatActivity
                 startActivityForResult(myIntent, 0);
             }
         });
-        schoolSecret.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View buttonView)
-            {
-                Intent myIntent = new Intent(buttonView.getContext(), secret_activity.class);
-                startActivityForResult(myIntent, 0);
-            }
-        });
+
     }
 }

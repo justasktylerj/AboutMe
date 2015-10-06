@@ -8,4 +8,5 @@
     <string name="title_activity_games">GamesActivity</string>
     <string name="title_activity_tv">TvActivity</string>
     <string name="title_activity_programming">ProgrammingActivity</string>
+    <string name="title_activity_secret_activity">secret_activity</string>
 </resources>
