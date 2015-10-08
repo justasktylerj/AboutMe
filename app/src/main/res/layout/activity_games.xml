@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="My favorite games include the kingdom rush serires, however my favorite game of all time is Dungeons and Dragons, my current charater is shown below"
+        android:text="My favorite games include the kingdom rush series, my favorite game of all time is Dungeons and Dragons, my current character is shown below"
         android:id="@+id/gamesDnd"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
